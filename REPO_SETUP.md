@@ -13,15 +13,33 @@ Follow these steps to create your GitHub repository for this project.
    - **Do NOT initialize** with README, .gitignore, or license (we already have these)
 4. Click "Create repository"
 
-## 2. Initialize and Push Your Code
+## 2. Setup GitHub Authentication
 
-Run these commands in your terminal:
+⚠️ **IMPORTANT**: GitHub requires SSH keys or Personal Access Token (not passwords).
+
+### Quick SSH Setup (Recommended):
+```bash
+cd /home/mint/python/game/Trifaze
+./setup_github_ssh.sh
+```
+
+This script will:
+1. Generate an SSH key for you
+2. Show you the key to copy
+3. Guide you to add it to GitHub
+4. Set up your repository automatically
+
+**For detailed instructions**, see [GITHUB_AUTH_SETUP.md](GITHUB_AUTH_SETUP.md)
+
+## 3. Initialize and Push Your Code
+
+After setting up authentication, run:
 
 ```bash
 # Navigate to your project directory
 cd /home/mint/python/game/Trifaze
 
-# Initialize git repository
+# Initialize git repository (if not already done)
 git init
 
 # Add all files
@@ -33,14 +51,15 @@ git commit -m "Initial commit: Hand-Controlled Pong Game v1.0.0"
 # Rename branch to main
 git branch -M main
 
-# Add remote repository
-git remote add origin https://github.com/ekagansahin/hand-controlled-pong.git
+# If you used SSH setup script, this is already done!
+# Otherwise, add remote repository:
+git remote add origin git@github.com:ekagansahin/hand-controlled-pong.git
 
 # Push to GitHub
 git push -u origin main
 ```
 
-## 3. Configure Repository Settings on GitHub
+## 4. Configure Repository Settings on GitHub
 
 ### Add Topics
 Go to your repository → Click the gear icon next to "About" → Add topics:
@@ -69,7 +88,7 @@ Go to Settings → General:
 - ✓ Discussions (for community discussions)
 - ✓ Preserve this repository (under "Danger Zone")
 
-## 4. Create Your First Release
+## 5. Create Your First Release
 
 1. Go to Releases → "Create a new release"
 2. Click "Choose a tag" → Type `v1.0.0` → "Create new tag"
@@ -98,14 +117,14 @@ Go to Settings → General:
    ```
 5. Click "Publish release"
 
-## 5. Add Screenshots/Demo (Recommended)
+## 6. Add Screenshots/Demo (Recommended)
 
 1. Take screenshots of your game
 2. Create a `screenshots` folder in your repo
 3. Add images to README.md
 4. Optional: Record a demo video and upload to YouTube, then embed in README
 
-## 6. Share Your Project
+## 7. Share Your Project
 
 Your project is now live at:
 **https://github.com/ekagansahin/hand-controlled-pong**
@@ -117,7 +136,7 @@ Share it on:
 - Dev.to
 - Hacker News
 
-## 7. Optional Enhancements
+## 8. Optional Enhancements
 
 ### Add README Badge
 Add this badge to your README.md (already included):

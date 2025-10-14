@@ -149,3 +149,8 @@ screenshots/
 *.avi
 recorded_games/
 
+# Local setup files (not for public repo)
+FIX_AUTH_ERROR.txt
+setup_github_ssh.sh
+HOW_TO_RUN.md
+
