@@ -153,4 +153,10 @@ recorded_games/
 FIX_AUTH_ERROR.txt
 setup_github_ssh.sh
 HOW_TO_RUN.md
+REPO_SETUP.md
+GITHUB_AUTH_SETUP.md
+GIT_WORKFLOW.md
+PROJECT_STRUCTURE.md
+update_repo.sh
+quick_push.sh
 
